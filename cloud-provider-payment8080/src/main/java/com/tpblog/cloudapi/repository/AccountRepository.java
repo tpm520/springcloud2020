@@ -1,6 +1,6 @@
-package com.tpblog.cloud.repository;
+package com.tpblog.cloudapi.repository;
 
-import com.tpblog.cloud.entity.CloudAccount;
+import com.tpblog.cloudapi.entity.CloudAccount;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AccountRepository extends JpaRepository<CloudAccount,Long> {

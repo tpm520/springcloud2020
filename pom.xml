@@ -10,6 +10,7 @@
   <modules>
     <module>cloud-provider-payment8080</module>
     <module>cloud-consumer-order9090</module>
+    <module>cloud-api</module>
   </modules>
   <packaging>pom</packaging>
   <name>Maven</name>

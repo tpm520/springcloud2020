@@ -1,6 +1,7 @@
-package com.tpblog.cloud.service;
+package com.tpblog.cloudapi.service;
 
-import com.tpblog.cloud.entity.CloudAccount;
+
+import com.tpblog.cloudapi.entity.CloudAccount;
 
 public interface AccountService {
     CloudAccount saveAccount(CloudAccount account);

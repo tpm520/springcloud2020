@@ -1,4 +1,4 @@
-package com.tpblog.cloud.entity;
+package com.tpblog.cloudapi.entity;
 
 
 import javax.persistence.*;

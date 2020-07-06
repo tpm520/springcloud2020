@@ -1,9 +1,8 @@
-package com.tpblog.cloud;
+package com.tpblog.cloudapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
 public class PaymentApplication8080 {

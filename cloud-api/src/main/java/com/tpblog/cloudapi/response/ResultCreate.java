@@ -1,4 +1,4 @@
-package com.tpblog.cloud.response;
+package com.tpblog.cloudapi.response;
 
 public class ResultCreate {
 
