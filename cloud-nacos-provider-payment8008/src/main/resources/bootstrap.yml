@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cloud-provider-payment
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: a539d5b5-1ea4-4e17-9447-80e7096255ed
+        group: dev_group
+        file-extension: yaml
+      discovery:
+        server-addr: 127.0.0.1:8848

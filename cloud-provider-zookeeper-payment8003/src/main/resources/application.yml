@@ -1,0 +1,20 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: cloud-provider-payment
+
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin://127.0.0.1/orcl
+    username: wateruser
+    password: tiger
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+  cloud:
+    zookeeper:
+      connect-string: 10.4.7.88:2181

@@ -1,0 +1,19 @@
+server:
+  port: 8005
+spring:
+  application:
+    name: cloud-provider-hystrix-payment
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin://127.0.0.1/orcl
+    username: wateruser
+    password: tiger
+    type: com.alibaba.druid.pool.DruidDataSource
+  cloud:
+    zookeeper:
+      connect-string: 10.4.7.88:2181
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

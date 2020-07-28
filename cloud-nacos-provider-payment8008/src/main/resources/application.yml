@@ -1,0 +1,14 @@
+  #datasource:
+    #driver-class-name: oracle.jdbc.driver.OracleDriver
+    #url: jdbc:oracle:thin://127.0.0.1/orcl
+    #username: wateruser
+    #password: tiger
+    #type: com.alibaba.druid.pool.DruidDataSource
+#management:
+  #endpoints:
+    #web:
+     # exposure:
+       # include: '*'
+spring:
+  profiles:
+    active: dev

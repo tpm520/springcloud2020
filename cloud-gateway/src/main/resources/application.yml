@@ -1,0 +1,24 @@
+server:
+  port: 9572
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    zookeeper:
+      connect-string: 10.4.7.88:2181
+    gateway:
+      routes:
+        - id: gateway_1
+          #uri: http://localhost:8002
+          uri: lb://cloud-provider-payment
+          predicates:
+            - Method=GET
+            #- Path=/find/account/{aid}
+        - id: gateway_2
+          uri: lb://cloud-provider-payment
+          predicates:
+            - Method=GET
+      discovery:
+        locator:
+          enabled: true  # 开启gateway动态路由
+
